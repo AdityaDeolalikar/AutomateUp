@@ -145,27 +145,31 @@ const About = () => {
 
       {/* Next section */}
 
-      <div className="flex flex-col mt-10 w-full md:mt-5 md:flex-row md:items-center md:gap-10">
-        <div className="md:w-1/2">
+      <div className="flex flex-col px-4 mt-10 w-full md:mt-20 md:flex-row md:items-center md:gap-16 md:px-8 lg:px-16">
+        <div className="transition-transform duration-500 transform md:w-1/2 hover:scale-105">
           <img
             src={teamWork}
             alt="Teamwork"
-            className="mx-auto w-3/4 rounded-lg shadow-md opacity-100 md:mt-10 md:w-full md:mx-10"
+            className="mx-auto w-full rounded-2xl shadow-xl opacity-100 transition-shadow duration-300 md:w-full hover:shadow-2xl"
           />
         </div>
-        <div className="w-full md:mx-10 md:w-1/2">
-          <h1 className="mx-auto mt-4 w-3/4 text-3xl font-semibold text-center md:text-4xl md:text-left md:w-full">
-            We are a closely-knit team of creators and problem solvers
-          </h1>
-          <p className="mx-auto mt-4 w-3/4 font-medium text-center text-md md:text-left md:w-full md:text-lg">
-            Our strength lies in our people. Our team of dedicated professionals
-            combines their diverse skills and experiences to create software
-            that not only meets but exceeds your business goals. <br /> We take
-            pride in our collaborative approach, ensuring seamless communication
-            and exceptional outcomes from start to finish. We never ship
-            anything less than production-grade software that’s loved by its
-            users.
-          </p>
+        <div className="mt-8 w-full md:mt-0 md:w-1/2">
+          <div className="px-4 space-y-6 md:px-0">
+            <h1 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 md:text-4xl lg:text-5xl md:text-left">
+              We are a closely-knit team of creators and problem solvers
+            </h1>
+            <p className="text-lg leading-relaxed text-center text-gray-700 md:text-xl md:text-left">
+              Our strength lies in our people. Our team of dedicated professionals
+              combines their diverse skills and experiences to create software
+              that not only meets but exceeds your business goals.
+            </p>
+            <p className="text-lg leading-relaxed text-center text-gray-700 md:text-xl md:text-left">
+              We take pride in our collaborative approach, ensuring seamless communication
+              and exceptional outcomes from start to finish. We never ship
+              anything less than production-grade software that's loved by its
+              users.
+            </p>
+          </div>
         </div>
       </div>
 
